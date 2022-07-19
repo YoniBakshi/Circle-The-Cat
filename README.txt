@@ -23,6 +23,26 @@ Cat = Furry thingy with pink glasses looks like a unicorn
 Blue tile = Available tile of a path.
 Gold tile = Flipped tile which is blocked.
 
+==============================================================================
+
+Data Structure :
+Using stack for "Undo" button to pop the last move.
+Using queue for BFS algorithm.
+Using vectors to game board, buttons and so on...
+
+==============================================================================
+
+Algorithms :
+1. The order of the flipped tiles in the beginning of every new level is completly random - using "rand" to choose which tiles
+    to flip in the vector of board's tiles.
+2. The quantity of flipped tiles in every level is random and being decrease randomly in every progress in levels.
+    Using "rand" between 1-3 and decrease it from the member of int m_starterFlipped tiles.
+    As requested - quantity of flipped tiles will be max 14 tiles, minimum 4 tiles.
+    This algorithm creates a random game with a random quantity of levels! 
+3.  This program uses BFS algorithm to calculate and find the shortest path for the cat to reach the outlines.
+    While using BFS algorithm, we randomize the options of the shortest path and choose randomly one of them as
+    the current path of the cat to move. 
+
 ==============================================================================  
 
 Files list :
@@ -49,24 +69,4 @@ Resources.cpp	-> Singletone class. Loads all the needed resources.
 Tile.cpp		-> Initialize the tiles.
 
 ==============================================================================
-
-Data Structure :
-Using stack for "Undo" button to pop the last move.
-Using queue for BFS algorithm.
-Using vectors to game board, buttons and so on...
-
-==============================================================================
-
-Algorithms :
-1. The order of the flipped tiles in the beginning of every new level is completly random - using "rand" to choose which tiles
-    to flip in the vector of board's tiles.
-2. The quantity of flipped tiles in every level is random and being decrease randomly in every progress in levels.
-    Using "rand" between 1-3 and decrease it from the member of int m_starterFlipped tiles.
-    As requested - quantity of flipped tiles will be max 14 tiles, minimum 4 tiles.
-    This algorithm creates a random game with a random quantity of levels! 
-3.  This program uses BFS algorithm to calculate and find the shortest path for the cat to reach the outlines.
-    While using BFS algorithm, we randomize the options of the shortest path and choose randomly one of them as
-    the current path of the cat to move. 
-
-==============================================================================
-  Full-Names : Yehonatan Bakshi & Hila Saadon
+Full-Names : Yehonatan Bakshi & Hila Saadon
