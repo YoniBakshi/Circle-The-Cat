@@ -1,8 +1,4 @@
 ============================================================================
-  Full-Names : Yehonatan Bakshi & Hila Saadon
-  Written by = Yehonatan Bakshi    ,  id = 308077668  ,  login = yehonatanba
-  Written by = Hila Saadon 	        ,  id = 208405217  ,  login = hilasaa
-============================================================================
 "Circle The Cat"
 
 Description : 
@@ -73,7 +69,4 @@ Algorithms :
     the current path of the cat to move. 
 
 ==============================================================================
-
-Known Bugs : 
-
-==============================================================================
+  Full-Names : Yehonatan Bakshi & Hila Saadon
